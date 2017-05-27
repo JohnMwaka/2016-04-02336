@@ -15,11 +15,11 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>LOgin Page </title>
 
-        <link href="http://localhost/2016-04-02336/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <link href="http://localhost/2016-04-02336/bootstrap/css/styles.css" rel="stylesheet">
-        <script type="text/javascript" src="http://localhost/2016-04-02336/bootstrap/js/jquery.min.js"></script>
-        <script type="text/javascript" src="http://localhost/2016-04-02336/bootstrap/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="http://localhost/2016-04-02336/bootstrap/js/f.txt"></script>
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="bootstrap/css/styles.css" rel="stylesheet">
+        <script type="text/javascript" src="bootstrap/js/jquery.min.js"></script>
+        <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="bootstrap/js/f.txt"></script>
 
         <title>Login Page</title>
     </head>
