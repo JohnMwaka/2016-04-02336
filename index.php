@@ -63,7 +63,7 @@ and open the template in the editor.
                                 </div>
                                 <div class="modal-body">
 
-                                    <form style="padding: 10px;" action="sign_up.php" method="post" enctype="form-data/multipart">
+                                    <form style="padding: 10px;" action="sign_up_action.php" method="post" enctype="form-data/multipart">
                                         <div class="form-group">
                                             <label for="exampleInputEmail1">First Name:</label>
                                             <input type="text" required="" class="form-control" name="first_name" pattern="[a-z]{3,20}"id="exampleInputEmail1" title="Your first name should contain at least three (3) letters. (ONLY LETTERS ARE ALLOWED)" placeholder="Account(or User ) Name">
