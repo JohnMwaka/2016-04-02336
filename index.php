@@ -34,14 +34,14 @@ and open the template in the editor.
         <div class="container" style="padding-top: 200px; padding-right: 300px;padding-left: 300px;">
             <div class="panel panel-primary">
                 <div class="panel-body" style="">
-                    <form style="padding: 10px;">
+                    <form style="padding: 10px;" action="login.php" method="post">
                         <div class="form-group">
                             <label for="exampleInputEmail1">Account(or User ) Name:</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Account(or User ) Name">
+                            <input type="text" class="form-control" title="Please Enter your user name" id="exampleInputEmail1" required="" placeholder="Account(or User ) Name">
                         </div>
                         <div class="form-group">
                             <label for="exampleInputPassword1">Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            <input type="password" class="form-control" title="Please enter your password" required=""id="exampleInputPassword1" placeholder="Password">
                         </div>
 
                         <div class="checkbox">
@@ -49,7 +49,7 @@ and open the template in the editor.
                                 <input type="checkbox"> Keep me Logged In.
                             </label>
                         </div>
-                        <a href="home.php"><button type="button" class="btn btn-primary">SignIn</button></a>
+                        <button type="submit" name="login" class="btn btn-primary">SignIn</button>
                     </form>
                     <br>
                     <p align='center' style="font-size: 20px; "><b>OR <a href="#" data-toggle="modal" data-target="#signUp"><i>Sign Up</i></a></b></p>
@@ -63,57 +63,58 @@ and open the template in the editor.
                                 </div>
                                 <div class="modal-body">
 
-                                    <form style="padding: 10px;">
+                                    <form style="padding: 10px;" action="sign_up.php" method="post" enctype="form-data/multipart">
                                         <div class="form-group">
                                             <label for="exampleInputEmail1">First Name:</label>
-                                            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Account(or User ) Name">
+                                            <input type="text" required="" class="form-control" name="first_name" pattern="[a-z]{3,20}"id="exampleInputEmail1" title="Your first name should contain at least three (3) letters. (ONLY LETTERS ARE ALLOWED)" placeholder="Account(or User ) Name">
                                         </div>
                                         <div class="form-group">
                                             <label for="exampleInputEmail1">Middle Name:</label>
-                                            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Account(or User ) Name">
+                                            <input type="text" required=""class="form-control" name="middle_name" pattern="[a-z]{3,20}" id="exampleInputEmail1"title="Your middle name should contain at least three (3) letters. (ONLY LETTERS ARE ALLOWED)" placeholder="Account(or User ) Name">
                                         </div>
                                         <div class="form-group">
                                             <label for="exampleInputEmail1">Last( or Sur) Name:</label>
-                                            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Account(or User ) Name">
+                                            <input type="text" required=""class="form-control" name="last_name" pattern="[a-z]{3,}" id="exampleInputEmail1" title="Your last name should contain at least three (3) letters. (ONLY LETTERS ARE ALLOWED)"placeholder="Account(or User ) Name">
                                         </div>
                                         <div class="form-group">
                                             <label for="exampleInputEmail1">Date of Birth:</label>
-                                            <input type="date" class="form-control" id="exampleInputEmail1" placeholder="Account(or User ) Name">
+                                            <input type="date" required=""class="form-control" title="PLease enter your date of birth."name="birth_date" id="exampleInputEmail1" placeholder="Account(or User ) Name">
                                         </div>
                                         <div class="form-group">
                                             <label for="exampleInputEmail1">Email Address:</label>
-                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Account(or User ) Name">
+                                            <input type="email" required=""class="form-control" title="Please Enter your Email address."name="email" id="exampleInputEmail1" placeholder="Account(or User ) Name">
                                         </div>
                                         <div class="form-group">
                                             <label for="exampleInputEmail1">Mobile Phone Number:</label>
-                                            <input type="tel" class="form-control" id="exampleInputEmail1" placeholder="Account(or User ) Name">
+                                            <input type="text" required=""class="form-control" pattern="[0-9]{10,10}"title="Please enter your mobile number."name="phone_number"id="exampleInputEmail1" placeholder="Account(or User ) Name">
                                         </div>
 
                                         <div class="radio">
                                             <label for="exampleInputEmail1"><b>Gender :</b></label>
                                             <label>
-                                                <input type="radio"> Male
+                                                <input type="radio" required=""name="gender"> Male
                                             </label>
                                             <label>
-                                                <input type="radio"> Female
+                                                <input type="radio" required=""name="gender"> Female
                                             </label>
                                             <label>
-                                                <input type="radio"> Others
+                                                <input type="radio" required=""name="gender"> Others
 
                                             </label>
                                         </div>
                                         <div class="form-group">
-                                            <label for="exampleInputPassword1">Password</label>
-                                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                            <label for="exampleInputPassword1" >Password</label>
+                                            <input type="password" required="" title="Please fill your password. Your password should be atleast 8 characters."name="password"class="form-control" pattern="{8,25}"id="exampleInputPassword1" placeholder="Password">
                                         </div> 
                                         <div class="form-group">
                                             <label for="exampleInputPassword1">Confirm Password</label>
-                                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                            <input type="password" title="Please confirm your password. Your confirm password should match the password." required=""class="form-control" id="exampleInputPassword1" placeholder="Password">
                                         </div>
 
                                         <div class="checkbox">
                                             <label>
-                                                <input type="checkbox"> Keep me Signed In.
+                                                <a href="#">Privacy Terms and Policies</a><br>
+                                                <input type="checkbox" required="" name="checkbox" title="Please check this."> I agree
                                             </label>
                                         </div>
                                       
@@ -121,7 +122,7 @@ and open the template in the editor.
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-default" data-dismiss="modal"><b>Close</b></button>
-                                    <a href="welcome.php"><button type="button" class="btn btn-primary">SignUp</button></a>
+                                    <button type="submit" name="sign_up" class="btn btn-primary">SignUp</button>
                                     </form>
                                 </div>
                             </div>
