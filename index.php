@@ -42,6 +42,7 @@ and open the template in the editor.
                         <div class="form-group">
                             <label for="exampleInputPassword1">Password</label>
                             <input type="password" class="form-control" title="Please enter your password" required=""id="exampleInputPassword1" placeholder="Password">
+                            <a href="#">Forgot Password</a>
                         </div>
 
                         <div class="checkbox">
